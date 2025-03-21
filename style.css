@@ -1,0 +1,75 @@
+/* General Table Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.timetable-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(243, 243, 243, 0);
+}
+
+h4 {
+    color: #636568;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header Row */
+th {
+    background-color: #17293a6b;
+    color: rgb(34, 29, 29);
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Highlight First Time Column */
+td:first-child {
+    background-color: #8a8c8f52;
+    color: rgb(14, 12, 12);
+    font-weight: bold;
+}
+
+/* Styling Break and Lunch */
+.break {
+    background-color: #f7f0ef;
+    color: rgb(31, 25, 25);
+    font-weight: bold;
+}
+
+.lunch {
+    background-color: #f3f2ef;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
